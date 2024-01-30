@@ -15,4 +15,13 @@ app.get("/api/fortune", controller.getFortune);
 //Fearture get a random baby girl name
 app.get("/api/babyGirl", controller.getBabyName);
 
+//Fearture get a random inspirational quote
+app.get("/api/inspiration", controller.getInspirationalQuote);
+
+//Fearture get a random soccer team
+app.get("/api/soccerTeam", controller.getSportTeam);
+
+//Feartire create a client profile
+app.post("/api/client", controller.createClient);
+
 app.listen(4000, () => console.log("Server running on 4000"));
